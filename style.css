@@ -1,0 +1,203 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    background:  linear-gradient(130deg, #0c053e, #5d5b79);
+    /* overflow:hidden; */
+    /* background-image: url("https://wallpaperaccess.com/full/24245.jpg"); */
+    background-repeat: no-repeat;
+    justify-content: center;
+  }
+  
+  .weather-box {
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 400px; 
+    /* background: linear-gradient(130deg, #0c053e, #5d5b79); */
+    height:80%; 
+    display: block; 
+    margin: auto;
+    border-radius: 50px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif; 
+    padding: 55px 30px;
+  }
+  
+  .weather-icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+  input {
+    height: 35px;
+    width: 75%;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    padding: 10px 25px;
+    background: linear-gradient(130deg, #0c053e, #5d5b79);
+    color:white;
+  }
+  
+  button {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    outline: none;
+    /* background: linear-gradient(130deg, #0c053e, #5d5b79); */
+  }
+  
+  @media(max-width:869px) {
+    input {
+      width: 65%;
+    }
+  }
+  
+  @media(max-width:375px) {
+    /* body {
+      min-height: 90vh;
+    } */
+  
+    .weather-box {
+      height:100%;
+    }
+  }
+  
+  .weather p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+  }
+  .weather h3 {
+    font-size: 20px;
+    color:white;
+  }
+  .weather h4 {
+    font-size: 20px;
+    color:white;
+  }
+  .weather h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin:0 10px;
+  }
+  
+  .weather h2 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+  }
+  span{
+    position: absolute;
+    font-size:24px;
+    margin-left: 3px;
+  }
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+  }
+  
+  .col {
+    /* display: flex; */
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* text-align: left;  */
+  }
+  
+  .col img {
+    height:50px;
+    width:50px;
+    border-radius: 50px;
+    /* width: 70%; */
+    justify-content: space-evenly;
+  }
+  .col, .text{
+    font-size:5px;
+  }
+  /* .humidity {
+    font-size:5px;
+  }
+  .wind {
+    font-size:5px;
+  } */
+  
+  @media(max-width:869px) {
+    .weather img {
+      height: 140px;
+      width: 140px;
+    }
+  
+    .weather h1 {
+      font-size: 45px;
+      font-weight: 500;
+    }
+  
+    .weather h2 {
+      font-size: 30px;
+      font-weight: 500;
+    }
+  
+    .col {
+      display: block;
+      margin: 5px;
+      padding: 5px 0px;
+      justify-content: space-evenly;
+    }
+  
+    .col img {
+      height: 70px;
+      width: 70px;
+      /* margin-right: 10px; */
+    }
+  
+    .humidity {
+      font-size: 10px;
+      align-items: center;
+      text-align: center;
+      margin-right: 5px;
+    }
+  
+    .wind {
+      font-size: 10px;
+      align-items: center;
+      text-align: center;
+      margin-right: 5px;
+    }
+  
+    .Visibility {
+      font-size: 10px;
+      align-items: center;
+      text-align: center;
+      margin-right: 5px;
+    }
+  
+    .col p {
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+  .weather-date-time {
+    display: flex;
+    justify-content: space-between;  /* This aligns Date and Uptime at opposite ends */
+    align-items: center;  /* Vertically center the text */
+    padding: 10px;
+  }
+  .weather-icon img{
+    color: white;
+  }
