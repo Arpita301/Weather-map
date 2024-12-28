@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Weather-App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    interity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="weather-box">
+    <div class="weather-icon">
+      <input type="text" placeholder="Search....">
+      <button><img src="https://t3.ftcdn.net/jpg/05/99/84/86/360_F_599848646_MdK7wVDJQZygObyKEahVkOuhh0IGdTt3.jpg"
+          height="30px" width="30px"></button>
+    </div>
+    <div class="weather">
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/012/066/499/original/sunny-and-rainy-day-weather-forecast-icon-meteorological-sign-3d-render-png.png"
+        class="weather-image" height="150px" width="150px">
+      <p class="weather-change-name">Clouds</p>
+      <div class="weather-date-time">
+      <h4 id="current-date">02-08-2024</h4>
+     <h3 id="current-time"> 00:00:00 PM</h3>
+      </div>
+      <h1 class="temp">22<span>°C</span></h1>
+      <h2 class="city"><i class="fa-solid fa-location-dot"></i> kolkata</h2>
+      <div class="details">
+        <div class="col">
+          <img
+            src="https://neeeco.com/wp-content/uploads/2021/07/Temperature-and-Humidity.png"
+            height="70px" width="70px">
+          <div>
+            <p class="humidity">50%</p>
+            <!-- <p class="text"> Humidity</p> -->
+          </div>
+        </div>
+        <div class="col">
+          <img src="https://www.pngall.com/wp-content/uploads/5/Wind-PNG-Free-Image.png" height="70px" width="70px">
+          <div>
+           <p class="wind">15 km/h</p>
+            <!-- <p  class="text"> Wind </p> -->
+          </div>
+        </div>
+        <!-- <div class="col">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/004/606/915/non_2x/icon-visibility-glyph-style-simple-illustration-editable-stroke-free-vector.jpg"
+            height="70px" width="70px">
+          <div>
+            <p class="visibility">1200 km</p>
+            <p  class="text">Visibility</p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="weathericon.js"></script>
+</body>
+
+</html>
